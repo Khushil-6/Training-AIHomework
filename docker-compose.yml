@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+    ping:
+        build: ./pingService
+        container_name: ping-service
+        restart: always
+        expose:
+          - 8080
+    
+    recive:
+        build: ./reciverService
+        container_name: reciver-service
+        restart: always
